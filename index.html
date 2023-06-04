@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Audio Visualizer w/ ParticlesJS (jQuery)</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="wrapper">
+  
+
+  
+  <div id="drop-zone-wrapper">
+    <div id="drop-zone">
+      <drop-paper class=flurry></drop-paper>
+      <div id="label">
+        <h1>Play<br/></h1>
+      </div>
+    </div>
+  </div>
+  <div class="hidden" id="center-logo">
+    <div id="audio-canvas-wrapper">
+      <canvas id="audio-canvas"></canvas>
+    </div>
+    <div id="text">
+      <h1>MURDER</h1>
+      <h1>MIND</h1>
+    </div>
+  </div>
+
+      <div class="particles" id="particles-slow"></div>
+  <div class="particles initial hidden" id="particles-fast"></div>
+  
+  
+  <div id="reset">
+    <h1>Stop</h1>
+  </div>
+</div>
+    <!--blur filter start-->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg"><defs><filter id="blur"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter></defs></svg>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg"><defs><filter id="blur-low"><feGaussianBlur stdDeviation="1"></feGaussianBlur></filter></defs></svg>
+<wall-paper class=flurry-lite></wall-paper>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js'></script>
+<script src='//code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='//rawgit.com/ckknight/random-js/master/lib/random.min.js'></script>
+<script src='//rawgit.com/jadnco/blear/master/blear.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
